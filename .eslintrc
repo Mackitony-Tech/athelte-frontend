@@ -9,8 +9,8 @@
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:prettier/recommended",
-        "plugin:jest/recommended",
-        "testing-library"
+        "plugin:jest/recommended"
+        // "testing-library"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {

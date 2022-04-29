@@ -23,7 +23,10 @@
     "lint": "eslint --max-warnings=0 --fix --ext .ts,.tsx .",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "lint-staged": {
-      "src/**/*.{ts,tsx}": ["npm run format", "npm run lint"],
+      "src/**/*.{ts,tsx}": [
+        "npm run format",
+        "npm run lint"
+      ],
       "src/**/*.scss": "npm run style-lint"
     }
   },
@@ -65,7 +68,7 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.4.1",
     "postcss": "^8.4.12",
-    "prettier": "^2.6.2",
+    "prettier": "2.6.2",
     "sass": "^1.51.0",
     "stylelint": "^14.8.1",
     "stylelint-config-standard-scss": "^3.0.0"
