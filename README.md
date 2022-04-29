@@ -1,2 +1,2 @@
-# athelte-frontend
+# athlete-frontend
 Website in React, Typescript
