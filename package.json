@@ -21,14 +21,14 @@
     "eject": "react-scripts eject",
     "style-lint": "stylelint --config=.stylelintrc.json \"src/**/*.scss\" --formatter verbose",
     "lint": "eslint --max-warnings=0 --fix --ext .ts,.tsx .",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
-    "lint-staged": {
-      "src/**/*.{ts,tsx}": [
-        "npm run format",
-        "npm run lint"
-      ],
-      "src/**/*.scss": "npm run style-lint"
-    }
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "npm run format",
+      "npm run lint"
+    ],
+    "src/**/*.scss": "npm run style-lint"
   },
   "eslintConfig": {
     "extends": [
