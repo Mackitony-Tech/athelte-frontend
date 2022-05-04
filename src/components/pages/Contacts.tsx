@@ -1,11 +1,11 @@
 import React from "react";
 import Navigation from "../navigation/Navigation";
 
-export default function Admin() {
+export default function Contacts() {
   return (
     <>
       <Navigation />
-      <div>Admin</div>;
+      <div>Contacts</div>;
     </>
   );
 }
