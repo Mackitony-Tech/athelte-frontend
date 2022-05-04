@@ -1,11 +1,11 @@
 import React from "react";
 import Navigation from "../navigation/Navigation";
 
-export default function Admin() {
+export default function Athletes() {
   return (
     <>
       <Navigation />
-      <div>Admin</div>;
+      <div>Athletes</div>;
     </>
   );
 }
