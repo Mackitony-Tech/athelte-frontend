@@ -7,14 +7,11 @@ import {
   HeaderName,
   HeaderNavigation,
   HeaderMenuItem,
-  HeaderMenu,
   HeaderSideNavItems,
   SideNav,
   SideNavItems,
 } from "carbon-components-react";
-import { useNavigate } from "react-router-dom";
 export default function Navigation() {
-  const navigate = useNavigate();
   return (
     <>
       <div className="header-container">
