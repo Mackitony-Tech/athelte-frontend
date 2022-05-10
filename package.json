@@ -5,6 +5,7 @@
   "dependencies": {
     "@carbon/icons-react": "10.22.0",
     "@testing-library/jest-dom": "^5.16.4",
+    "@types/carbon__icons-react": "^10.31.2",
     "@types/jest": "^27.4.1",
     "@types/node": "^16.11.32",
     "@types/react": "^18.0.8",
@@ -26,14 +27,13 @@
     "eject": "react-scripts eject",
     "style-lint": "stylelint --config=.stylelintrc.json \"src/**/*.scss\" --formatter verbose",
     "lint": "eslint --max-warnings=0 --fix --ext .ts,.tsx .",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css}' --config ./.prettierrc"
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx}' --config ./.prettierrc"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
       "npm run format",
       "npm run lint"
-    ],
-    "src/**/*.scss": "npm run style-lint"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -57,6 +57,7 @@
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^14.1.1",
     "@tsconfig/create-react-app": "^1.0.2",
+    "@types/carbon-components-react": "^7.55.1",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
     "eslint": "^8.14.0",
