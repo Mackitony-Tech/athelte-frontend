@@ -1,1 +1,5 @@
-@import "react-slideshow-image/dist/styles.css";
+.slide-container {
+    .rsis-image {
+      background-size: contain !important;
+    }
+  }
