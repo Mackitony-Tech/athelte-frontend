@@ -7,6 +7,9 @@ import {
   HeaderName,
   HeaderNavigation,
   HeaderMenuItem,
+  HeaderSideNavItems,
+  SideNav,
+  SideNavItems,
 } from "carbon-components-react";
 export default function Navigation() {
   return (
@@ -14,21 +17,32 @@ export default function Navigation() {
       <div className="header-container">
         <HeaderContainer
           render={({ isSideNavExpanded, onClickSideNavExpand }) => (
-            <Header aria-label="nav-bar">
+            <Header aria-label="KAC Platform Name">
               <SkipToContent />
               <HeaderMenuButton aria-label="Open menu" onClick={onClickSideNavExpand} isActive={isSideNavExpanded} />
-              <HeaderName href="/" prefix="K A">
-                [Training Camp]
+              <HeaderName href="#" prefix="KAC">
+                [Platform]
               </HeaderName>
-              <HeaderNavigation aria-label="nav">
+              <HeaderNavigation aria-label="KAC [Platform]">
                 <HeaderMenuItem isCurrentPage href="/">
                   Home
                 </HeaderMenuItem>
                 <HeaderMenuItem href="/athletes">Athletes</HeaderMenuItem>
                 <HeaderMenuItem href="/blog">Blog</HeaderMenuItem>
                 <HeaderMenuItem href="/contacts">Contacts</HeaderMenuItem>
-                <HeaderMenuItem href="/admin">Admin Login</HeaderMenuItem>
+                <HeaderMenuItem href="/admin">Admin</HeaderMenuItem>
               </HeaderNavigation>
+              <SideNav aria-label="Side navigation" expanded={isSideNavExpanded} isPersistent={false}>
+                <SideNavItems>
+                  <HeaderSideNavItems>
+                    <HeaderMenuItem href="/">Home</HeaderMenuItem>
+                    <HeaderMenuItem href="/athletes">Athletes</HeaderMenuItem>
+                    <HeaderMenuItem href="/blog">Blog</HeaderMenuItem>
+                    <HeaderMenuItem href="/contacts">Contacts</HeaderMenuItem>
+                    <HeaderMenuItem href="admin">Admin</HeaderMenuItem>
+                  </HeaderSideNavItems>
+                </SideNavItems>
+              </SideNav>
             </Header>
           )}
         />
